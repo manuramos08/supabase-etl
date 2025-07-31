@@ -4,12 +4,12 @@ import os
 
 """Utilidades de conexión a Supabase."""
 from supabase import create_client, Client
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 import os
 
 def get_client() -> Client:
 
-    load_dotenv()  
+    load_dotenv(find_dotenv()) 
     url: str | None = os.getenv("SUPABASE_URL")
     key: str | None = os.getenv("SUPABASE_KEY")
 
