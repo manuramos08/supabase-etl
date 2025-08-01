@@ -1,4 +1,4 @@
 ﻿## Supabase Airbnb ETL
-Pipeline end-to-end: CSV → pandas → Supabase → análisis y visualización.
+Pipeline end-to-end: CSV → Pandas cleaning → PostgreSQL → Supabase → análisis y visualización.
 
 Ver notebook interactiva: https://manuramos08.github.io/supabase-etl/
